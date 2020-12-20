@@ -101,7 +101,7 @@ def pushedit(request):
             util.save_entry(title, content)
             return redirect(f'wiki/{title}')
 
-# Random Page
+# Automatically Open Random Page
 def randompage(request):
     entries = util.list_entries()
     title = random.choice(entries)
