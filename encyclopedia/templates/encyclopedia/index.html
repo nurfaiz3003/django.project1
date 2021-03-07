@@ -5,13 +5,11 @@
 {% endblock %}
 
 {% block body %}
-    <div class="col-10">
+    <div class="col">
         <h1>All Pages</h1>
-
-        <ul>
-            {% for entry in entries %}
-                <li><a href="{% url 'title' entry %}">{{ entry }}</a></li>
-            {% endfor %}
-        </ul>
+        <br>
+        {% for entry in entries %}
+            <a class="btn btn-light btn-lg btn-block entry-list" href="{% url 'title' entry %}">{{ entry }}</a>
+        {% endfor %}
     </div>
 {% endblock %}

@@ -47,6 +47,32 @@ textarea {
 }
 
 .side-button {
-    color: black;
     padding: 3px 0;
+}
+
+.side-button a {
+    color: black;
+    font-size: large;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+label {
+    margin: 10px 0 0 0;
+    font-size: medium;
+}
+
+[type="submit"] {
+    margin: 20px 0;
+}
+
+.entry-list {
+    padding: 10px 30px;
+    margin-top: 10px;
+}
+
+.edit {
+    margin-top: 30px;
 }

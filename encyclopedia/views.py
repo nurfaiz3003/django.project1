@@ -30,7 +30,7 @@ def openpage(request, title):
         "content" : content,
         "title" : title,
         # Adding link to edit page
-        "editform" : f"<a href='/editform/{title}'>Edit Page</a>"
+        "editform" : f"<a class=\"btn btn-warning edit\" href='/editform/{title}'>Edit Page</a>"
     })
 
 # Search Function
@@ -110,5 +110,5 @@ def randompage(request):
     return render(request, "encyclopedia/page.html", {
         "content" : content,
         "title" : title,
-        "editform" : f"<a href='/editform/{title}'>Edit Page</a>"
+        "editform" : f"<a class=\"btn btn-warning edit\" href='/editform/{title}'>Edit Page</a>"
     })
